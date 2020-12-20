@@ -55,7 +55,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }} #s
+          passphrase: ${{ secrets.PASSPHRASE }} #s1
           script: |
             sudo docker pull alksdocker/flask-app
             sudo docker stop $(sudo docker ps -a -q)
